@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/slogan"
+    tools:context=".RegisterPage">
+
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="-16dp"
+        android:layout_marginLeft="-5dp"
+        android:elevation="30dp"
+        android:background="@drawable/bg_rounded">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo2"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/tv_bookeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="258dp"
+            android:text="BookEat"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppinsextrabold"
+        android:text="PILIH PAKET"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:letterSpacing="0.1"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="260dp"
+                android:layout_height="375dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_rounded2"
+                android:backgroundTint="@color/slogan3"
+                android:elevation="5dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppinsextrabold"
+                        android:text="PAKET"
+                        android:textSize="25sp"
+                        android:textColor="@color/slogan"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-15dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppinsextrabold"
+                        android:text="STANDARD"
+                        android:textSize="25sp"
+                        android:textColor="@color/slogan"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="• Limited 20 Menu "
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="• Limietd 20 Meja"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="69dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="GRATIS"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    />
+
+                <Button
+                    android:id="@+id/btn_paketgratis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="51dp"
+                    android:layout_gravity="center_horizontal"
+                    android:elevation="5dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/bebasneue"
+                    android:letterSpacing="0.1"
+                    android:text="LANJUT"
+                    android:textColor="@color/slogan"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="260dp"
+                android:layout_height="375dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_rounded2"
+                android:backgroundTint="@color/slogan3"
+                android:elevation="5dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="75dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppinsextrabold"
+                        android:text="PAKET"
+                        android:textSize="25sp"
+                        android:textColor="@color/slogan"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-15dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppinsextrabold"
+                        android:text="PRO"
+                        android:textSize="25sp"
+                        android:textColor="@color/slogan"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="• Unlimited Menu"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="• Unlimited Meja"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="• Fitur Laporan Analisis"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="• Fitur Laporan Keuangan"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Rp100.000/bulan"
+                    android:textStyle="italic"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Pembatalan kapan pun"
+                    android:textStyle="italic"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="PPN 11%"
+                    android:textStyle="italic"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/black"/>
+
+                <Button
+                    android:id="@+id/btn_paketberlangganan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:elevation="5dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/bebasneue"
+                    android:letterSpacing="0.1"
+                    android:text="BAYAR"
+                    android:textColor="@color/slogan"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

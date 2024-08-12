@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="125dp"
+    android:layout_height="165dp"
+    android:orientation="vertical"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_btn_milihmenu"
+        android:layout_width="125dp"
+        android:layout_height="120dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="7dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+
+            <CheckBox
+                android:id="@+id/checkbox_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/checkbox_meja_selector"
+                android:button="@android:color/transparent"/>
+
+            <ImageView
+                android:id="@+id/iv_tampilfoto"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/icondish2"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_tampilnamamenu"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="11dp"
+        android:text="Paket Menu Ayam goreng direbus"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:maxLines="3"/>
+
+    <TextView
+        android:id="@+id/tv_tampilhargamenu"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:text="Rp 12000"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:maxLines="3"/>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".LandingPage1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/poppinsextrabold"
+        android:text="BOOKEAT"
+        android:textSize="35sp"
+        android:textAppearance="@style/bookeat"
+        android:paddingLeft="110sp"
+        />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/tampilwelcomepage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.fragment.app.FragmentContainerView>
+
+</LinearLayout>

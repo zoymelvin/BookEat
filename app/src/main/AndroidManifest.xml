@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BookEat"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="34">
+        <activity
+            android:name=".EditMenu"
+            android:exported="false" />
+        <activity
+            android:name=".StrukDetailPesanan"
+            android:exported="false" />
+        <activity
+            android:name=".BayarMidtrans"
+            android:exported="false" />
+        <activity
+            android:name=".BuatPesanan"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileEdit"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".TambahMenu"
+            android:exported="false" />
+        <activity
+            android:name=".RiwayatPesanan"
+            android:exported="false" />
+        <activity
+            android:name=".LandingPageSubs"
+            android:exported="false" />
+        <activity
+            android:name=".KelolaMeja"
+            android:exported="false" />
+        <activity
+            android:name=".DaftarMenu"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardResto"
+            android:exported="false" />
+        <activity
+            android:name=".UserLogin"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterPage"
+            android:exported="false" />
+        <activity
+            android:name=".LandingPage1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="15dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_fotomenu"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/icondish2"/>
+
+    <TextView
+        android:id="@+id/tv_namamenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="5dp"
+        android:text="Nama Menu"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsregular"/>
+
+    <TextView
+        android:id="@+id/tv_terjualmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="40dp"
+        android:text="0 Terjual"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppinsregular"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="40dp"
+        android:text="|"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppinsregular"/>
+
+    <TextView
+        android:id="@+id/tv_disukaimenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="40dp"
+        android:text="Disukai 0"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppinsregular"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="132dp"
+        android:src="@drawable/iconstar"/>
+
+    <TextView
+        android:id="@+id/tv_ratingmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="70dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsregular"/>
+
+    <TextView
+        android:id="@+id/tv_hargamenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="70dp"
+        android:text="Rp0"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsregular"/>
+
+    <ImageView
+        android:id="@+id/iv_editmenu"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/iconedit2"
+        android:backgroundTint="@color/white"/>
+
+    <ImageView
+        android:id="@+id/iv_deletemenu"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="375dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/iconsampah"
+        android:backgroundTint="@color/white"/>
+
+</RelativeLayout>

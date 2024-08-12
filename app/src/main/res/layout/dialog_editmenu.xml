@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialogForgot"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialogBox"
+        android:orientation="vertical"
+        android:background="@drawable/bg_rounded2"
+        android:backgroundTint="@color/slogan3">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgotTitle"
+            android:background="@color/slogan"
+            android:padding="10dp"
+            android:text="Edit Menu"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:drawableLeft="@drawable/baseline_edit2_24"
+            android:drawablePadding="8dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Menu"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_updatenamamenu"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:inputType="textCapCharacters"
+            android:layout_marginStart="20sp"
+            android:backgroundTint="@color/black"
+            android:layout_marginBottom="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi Menu"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_updatedeskmenu"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:layout_marginStart="20sp"
+            android:backgroundTint="@color/black"
+            android:layout_marginBottom="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_updatehargamenu"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:layout_marginStart="20sp"
+            android:backgroundTint="@color/black"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Foto Menu"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_update_menu"
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/iconupload2"
+                android:background="@drawable/bg_rounded_upload"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageButton
+                android:id="@+id/ib_update_menu"
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_horizontal" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/btnCancel"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:backgroundTint="@color/slogan5"
+                android:text="Cancel"
+                android:layout_marginBottom="8dp"
+                app:cornerRadius = "20dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/btnReset"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="40dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/slogan"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="10dp"
+                android:text="Update"
+                app:cornerRadius = "20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

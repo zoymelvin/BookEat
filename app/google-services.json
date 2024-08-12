@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "14187098983",
+    "firebase_url": "https://book-eat-2112-default-rtdb.firebaseio.com",
+    "project_id": "book-eat-2112",
+    "storage_bucket": "book-eat-2112.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14187098983:android:8af8100e632e30c89835c2",
+        "android_client_info": {
+          "package_name": "com.jif.bookeat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCEsHrleCWpNkfA9qoqp2U1S68wnW52xg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

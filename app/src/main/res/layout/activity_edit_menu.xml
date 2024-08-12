@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_edit_menu.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".TambahMenu">
+
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="-5dp"
+        android:background="@drawable/bg_rounded"
+        android:backgroundTint="@color/slogan2"
+        android:elevation="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="25dp"
+            android:text="Edit Menu"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsextrabold"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/btn_kelolaback"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="235dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:backgroundTint="@color/slogan2"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_rounded3"
+                android:backgroundTint="@color/slogan3"
+                android:elevation="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Nama Menu"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/et_namamenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:autofillHints=""
+                    android:hint="masukkan nama menu"
+                    android:text=""
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:paddingHorizontal="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Deksripsi"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/et_deskripsimenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:autofillHints=""
+                    android:hint="masukkan deksripsi menu"
+                    android:text=""
+                    android:inputType="text"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:paddingHorizontal="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Harga"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/et_hargamenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:autofillHints=""
+                    android:hint="masukkan harga menu"
+                    android:text=""
+                    android:inputType="number"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:paddingHorizontal="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Masukkan Foto Resto"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_upload_menu"
+                        android:layout_width="320dp"
+                        android:layout_height="150dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/iconupload2"
+                        android:background="@drawable/bg_rounded_upload"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_upload_menu"
+                        android:layout_width="320dp"
+                        android:layout_height="150dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:layout_gravity="center_horizontal" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_editmenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:elevation="5dp"
+                    android:backgroundTint="@color/slogan"
+                    android:fontFamily="@font/bebasneue"
+                    android:letterSpacing="0.1"
+                    android:text="SIMPAN PERUBAHAN"
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

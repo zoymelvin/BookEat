@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hal_buat_pesanan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".BuatPesanan">
+
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="-5dp"
+        android:background="@drawable/bg_rounded"
+        android:backgroundTint="@color/slogan2"
+        android:elevation="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="25dp"
+            android:text="Buat Pesanan"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsextrabold"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/btn_kelolaback"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="190dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:backgroundTint="@color/slogan2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="right">
+
+    <ImageView
+        android:id="@+id/iv_keranjangpesan"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/iconcart"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:text="1"
+        android:textSize="17sp"
+        android:fontFamily="@font/poppinsextrabold"
+        android:textColor="@color/slogan"/>
+
+</LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/tampilfragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph">
+        </androidx.fragment.app.FragmentContainerView>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

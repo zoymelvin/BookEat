@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".DaftarMenu">
+
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="-5dp"
+        android:background="@drawable/bg_rounded"
+        android:backgroundTint="@color/slogan2"
+        android:elevation="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="25dp"
+            android:text="Daftar Menu"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsextrabold"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/btn_kelolaback"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="210dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:backgroundTint="@color/slogan2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Menu Anda"
+            android:textColor="@color/black"
+            android:paddingLeft="2dp"
+            android:paddingTop="3dp"
+            android:fontFamily="@font/poppinsextrabold"
+            android:textSize="15sp"/>
+
+        <ImageButton
+            android:id="@+id/ib_addmenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="243dp"
+            android:src="@drawable/iconaddmenu"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_pesanan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

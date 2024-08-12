@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".DashboardResto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/act_dashboardresto"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="420dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_marginTop="-16dp"
+            android:layout_marginLeft="-5dp"
+            android:background="@drawable/bg_rounded"
+            android:elevation="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/ib_navigasimenu"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_menu_24"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_paket"
+                    android:layout_width="96dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="120dp"
+                    android:fontFamily="@font/poppinsextrabold"
+                    android:text="PRO"
+                    android:textSize="30sp"
+                    android:textAppearance="@style/bookeat"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logo2"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="80dp"/>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_fotoresto"
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/iconimg"/>
+
+                <TextView
+                    android:id="@+id/tv_namaresto"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginLeft="135dp"
+                    android:text="NAMA RESTO"
+                    android:fontFamily="@font/poppinsextrabold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="134dp"
+                    android:src="@drawable/iconmap" />
+
+                <TextView
+                    android:id="@+id/tv_alamatresto"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="58dp"
+                    android:layout_marginLeft="165dp"
+                    android:text="Jl. Gorongan V no.165 C, Condongcatur"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="11sp"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="81dp"
+                    android:layout_marginLeft="136dp"
+                    android:src="@drawable/iconopen"/>
+
+                <TextView
+                    android:id="@+id/tv_openingresto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="86dp"
+                    android:layout_marginLeft="169dp"
+                    android:text="10:00"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="86dp"
+                    android:layout_marginLeft="208dp"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_closingresto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="86dp"
+                    android:layout_marginLeft="219dp"
+                    android:text="21:00"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:text="Kelola Restoran"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="18sp"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="35dp"
+                    android:columnCount="2"
+                    android:rowCount="5">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_daftarmenu"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:backgroundTint="@color/slogan2"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        android:layout_gravity="left"
+                        android:layout_column="0"
+                        android:layout_row="0">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="-13dp"
+                            android:src="@drawable/iconmenu"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:text="Daftar Menu"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_gravity="center"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_kelolameja"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:backgroundTint="@color/slogan4"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        android:layout_gravity="right"
+                        android:layout_column="1"
+                        android:layout_row="0">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="-13dp"
+                            android:src="@drawable/iconmeja"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:text="Kelola Meja"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_gravity="center"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_riwayatpesanan"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:backgroundTint="@color/slogan2"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_gravity="right"
+                        android:layout_column="0"
+                        android:layout_row="1">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="-13dp"
+                            android:src="@drawable/iconriwayatpesanan"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:text="Riwayat Pesanan"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_gravity="center"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_buatpesanan"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:backgroundTint="@color/slogan4"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_gravity="right"
+                        android:layout_column="1"
+                        android:layout_row="1">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="-5dp"
+                            android:src="@drawable/iconaddorder"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="28dp"
+                            android:text="Buat"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="42dp"
+                            android:text="Pesanan"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_gravity="center"/>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_lpanalisis"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:backgroundTint="@color/slogan2"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_gravity="right"
+                        android:layout_column="0"
+                        android:layout_row="2">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="-13dp"
+                            android:src="@drawable/icondaftarpesan"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="35dp"
+                            android:text="Laporan"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="54dp"
+                            android:text="Analisis"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_gravity="center"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_lpuang"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:backgroundTint="@color/slogan4"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_gravity="right"
+                        android:layout_column="1"
+                        android:layout_row="2">
+
+                        <ImageView
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="-13dp"
+                            android:src="@drawable/iconlaporanuang2"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="35dp"
+                            android:text="Laporan"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="54dp"
+                            android:text="Keuangan"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppinsregular"
+                            android:layout_gravity="center"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        app:itemTextColor="@color/black"
+        android:fitsSystemWindows="true"
+        android:background="@android:color/white"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

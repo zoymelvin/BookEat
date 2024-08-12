@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".WelcomePage2"
+    >
+
+    <ImageButton
+        android:id="@+id/ib_back_welcomepage2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="210dp"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageButton
+        android:id="@+id/ib_next_welcomepage2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="210dp"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="110dp"
+                android:src="@drawable/iconcust"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Lupakan Masalah Antrian, Mulailah Menerima Reservasi Secara Digital"
+            android:fontFamily="@font/poppinsextrabold"
+            android:textSize="15sp"
+            android:textAppearance="@style/buka_peluan"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:text="Tidak hanya akan menghindari antrian yang panjang, tetapi juga meningkatkan efisiensi operasional Anda. Melalui fitur reservasi yang mudah digunakan, pelanggan dapat dengan cepat dan nyaman memesan tempat di restoran Anda"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="12sp"
+            android:textAppearance="@style/bergabungla"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:layout_width="74dp"
+            android:layout_height="14dp"
+            android:src="@drawable/scroll2"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

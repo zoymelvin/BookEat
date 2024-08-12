@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp">
+
+        <ImageView
+            android:id="@+id/iv_cart_fotomenu"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/icondish2"/>
+
+        <TextView
+            android:id="@+id/tv_cart_namamenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="5dp"
+            android:text="Nama Menu"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <TextView
+            android:id="@+id/tv_cart_hargamenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="40dp"
+            android:text="Rp20000"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <TextView
+            android:id="@+id/tv_cart_idmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="134dp"
+            android:layout_marginTop="70dp"
+            android:text="RD - 005"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <ImageView
+            android:id="@+id/ib_deletecart"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="370dp"
+            android:src="@drawable/iconsampah"
+            android:backgroundTint="@color/white"/>
+
+        <ImageView
+            android:id="@+id/ib_kurangcart"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/iconminus"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_jmlhmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="70dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppinsregular" />
+
+        <ImageView
+            android:id="@+id/ib_tambahcart"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="325dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/iconplus"
+            android:backgroundTint="@color/white"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

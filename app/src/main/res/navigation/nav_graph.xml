@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/milihMenuFragment">
+
+    <fragment
+        android:id="@+id/milihMenuFragment"
+        android:name="com.jif.bookeat.MilihMenu"
+        android:label="@string/milihMenu_fragment_label"
+        tools:layout="@layout/fragment_milih_menu">
+
+        <action
+            android:id="@+id/action_milihMenuFragment_to_milihMejaFragment"
+            app:destination="@+id/milihMejaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/milihMejaFragment"
+        android:name="com.jif.bookeat.MilihMeja"
+        android:label="@string/milihMenu_fragment_label"
+        tools:layout="@layout/fragment_milih_meja">
+
+<!--        <action-->
+<!--            android:id="@+id/action_milihMejaFragment_to_milihMenuFragment"-->
+<!--            app:destination="@+id/milihMenuFragment" />-->
+    </fragment>
+</navigation>

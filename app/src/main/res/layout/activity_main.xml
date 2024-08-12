@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="-10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_silahkan_da"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Silahkan Masuk ke BookEat"
+        android:textSize="21sp"
+        android:fontFamily="@font/poppinsextrabold"
+        android:textAppearance="@style/silahkan_da"
+        android:gravity="center_horizontal|top"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="30dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logicon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="6dp"
+            android:text="Masuk Sebagai"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppinsregular"
+            android:textAppearance="@style/login_sebag"
+            android:gravity="top"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/maptype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/radio_button_resto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@android:color/transparent"
+                android:background="@drawable/radioresto_selector"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:button="@android:color/transparent"
+                android:background="@drawable/radiouser_selector"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_mari_bergab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Mari Bergabung"
+            android:textAppearance="@style/mari_bergab"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btn_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/slogan"
+            android:text="MASUK"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:letterSpacing="0.1"
+            android:fontFamily="@font/bebasneue"/>
+
+    </LinearLayout>
+
+</LinearLayout>

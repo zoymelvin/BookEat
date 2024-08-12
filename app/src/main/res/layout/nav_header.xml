@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:background="@drawable/headerbkg">
+
+    <ImageView
+        android:id="@+id/nav_header_image"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:src="@drawable/iconimg"/>
+
+    <TextView
+        android:id="@+id/nav_header_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="-7dp"
+        android:text="Nama Resto"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsextrabold"/>
+
+    <TextView
+        android:id="@+id/nav_header_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="emailresto@gmail.com"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>

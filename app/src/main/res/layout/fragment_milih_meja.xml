@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MilihMeja">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="180dp"
+            android:src="@drawable/shapekosong1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="5dp"
+            android:text="Kosong"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/shapekosong2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="5dp"
+            android:text="Terisi"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/shapekosong3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="5dp"
+            android:text="Dipilih"/>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_milihmeja"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:spanCount="4"
+        tools:listitem="@layout/list_meja">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_kosongmeja"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="10dp"
+            android:elevation="5dp"
+            android:backgroundTint="@color/slogan2"
+            android:fontFamily="@font/bebasneue"
+            android:letterSpacing="0.1"
+            android:text="KOSONGKAN"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btn_isimeja"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="35dp"
+            android:layout_gravity="center"
+            android:elevation="5dp"
+            android:backgroundTint="@color/slogan4"
+            android:fontFamily="@font/bebasneue"
+            android:letterSpacing="0.1"
+            android:text="ISI MEJA"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_kembalimilihmenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_gravity="center"
+            android:elevation="5dp"
+            android:backgroundTint="@color/slogan"
+            android:fontFamily="@font/bebasneue"
+            android:letterSpacing="0.1"
+            android:text="KEMBALI"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btn_lanjutpesanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_gravity="center"
+            android:elevation="5dp"
+            android:backgroundTint="@color/slogan"
+            android:fontFamily="@font/bebasneue"
+            android:letterSpacing="0.1"
+            android:text="LANJUT"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
